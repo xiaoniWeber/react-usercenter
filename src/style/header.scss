@@ -1,0 +1,23 @@
+@import './mixin';
+#header_top{
+    @include wh(100%,1rem);
+    position: relative;
+    background: #fff;
+}
+.head_back{
+    @include wh(auto,1rem);
+    line-height: 1rem;
+    margin-left: .3rem;
+    font-size: 0;
+    text-align: left;
+    float: left;
+    img{
+         @include wh(.44rem,.44rem);
+         position: relative;
+         top: .1rem;
+    }
+     span{
+        font-size:.32rem;
+        font-weight:bold;
+    }
+}

@@ -1,0 +1,43 @@
+@import './mixin';
+.code_number{
+    font-size: 0;
+    overflow: hidden;
+    width: 100%;
+    span{
+        display: block;
+        font-size: .3rem;
+    }
+    input{
+        font-size:.3rem;
+    }
+}
+.code_top{
+    @include fj();
+}
+.get_identify{
+        background: transparent;
+        font-size: 0;
+        border: 0;
+        outline: none;
+        display: inline-block;
+    span{
+        @include sc(.24rem,#FF5722)
+    }
+            
+        }
+.left_area{
+    input{
+        // text-align: right;
+        // width: 61%;
+    }
+    input.special{
+    text-align: left;
+    // margin-left: .6rem;
+    border: none;
+    font-size:.3rem;
+    // width:75%;
+    // position: relative;
+    // top:-.03rem;
+    }
+        
+}

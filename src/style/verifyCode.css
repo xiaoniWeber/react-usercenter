@@ -1,0 +1,39 @@
+.code_number {
+  font-size: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.code_number span {
+  display: block;
+  font-size: .3rem;
+}
+
+.code_number input {
+  font-size: .3rem;
+}
+
+.code_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.get_identify {
+  background: transparent;
+  font-size: 0;
+  border: 0;
+  outline: none;
+  display: inline-block;
+}
+
+.get_identify span {
+  font-size: 0.24rem;
+  color: #FF5722;
+}
+
+.left_area input.special {
+  text-align: left;
+  border: none;
+  font-size: .3rem;
+}

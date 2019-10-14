@@ -1,0 +1,167 @@
+@import './mixin';
+.choice_lang{
+    float: right;
+    height: .5rem;
+    font-size: 0;
+    position: relative;
+    margin: .3rem .5rem 0 0;
+    img{
+      width: .5rem;
+      height: .33rem;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: .19rem;
+    }
+    .choice_text{
+      float: left;
+      @include sc(.24rem,#333);
+      width: 2.3rem;
+      &:after{
+         content: "";
+         position:absolute; 
+         width:0px;
+         height:0px;
+         right:0;
+         top:.15rem;
+         border-bottom:.1rem solid rgba(0,0,0,0);
+         border-right:.1rem solid  rgba(0,0,0,0);
+         border-top:.1rem solid rgba(0,0,0,.5);;
+         border-left:.1rem solid  rgba(0,0,0,0);
+      }
+    }
+    .list_wrapper{
+      position: absolute;
+      top: .7rem;
+      right: 0;
+     
+    }
+    .lang_list{
+      @include wh(1.6rem,1.6rem);
+      background:rgba(0,0,0,.5);
+      border-radius:.1rem;
+       :before{
+         content: "";
+         position:absolute; 
+         width:0px;
+         height:0px;
+         right:.15rem;
+         top:-.2rem;
+         border-top:.1rem solid rgba(0,0,0,0);
+         border-right:.1rem solid  rgba(0,0,0,0);
+         border-bottom:.1rem solid rgba(0,0,0,.3);
+         border-left:.1rem solid  rgba(0,0,0,0);
+      }
+      li{
+         @include sc(.24rem,#fff);
+         line-height:.8rem;
+         padding-left: .3rem;
+      }
+     
+    }
+  }
+    .register_wrapper{
+       background:$fc;
+       padding-bottom:.5rem
+    }
+    .banner_box{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        font-size: 0;
+        text-align: center;
+        padding-top: .8rem;
+        img{
+            width: 1.44rem;
+        }
+    }
+    .registeForm{
+        padding-top: 1rem;
+        background: $fc;
+    }
+    .input_container{
+        @include sc(.3rem,#333);
+        width:6rem;
+        margin: 0 auto;
+        line-height: .5rem;
+        padding-bottom: .1rem;
+        // border-bottom: .025rem solid #ccc;
+        position:relative;
+        margin-bottom: .45rem;
+        @include fj();
+        &:after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: rgba(0,0,0,.12);
+            content: " ";
+        }
+        &:before{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            display: block;
+            width: 0;
+            height: 1px;
+            background: #333;
+            content: " ";
+            transition: width .3s ease-in-out;
+            // transform: translateX(-50%);
+        }
+         span{
+            display: block;
+            }
+            .left_area{
+            width: 80%;
+            }
+            input{
+            @include sc(.3rem,#333);
+            width: 90%;
+            }
+        .icon_input{
+            img{
+                @include wh(.44rem,.44rem);
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+        
+    }
+     .account_wrapper .left_area{
+        width: 100%;
+        input{
+        width: 100%;
+        }
+  }
+     .input_container.input_focus:before{
+        width:100%
+    }
+    .input_container.input_error:before{
+        width:0%;
+        background: #E93636;
+    }
+    .sub_btn{
+        @include btn(6rem);    
+	    background: #999;
+        margin: .64rem auto 0
+    }
+    .sub_btn.blue_btn{
+        background: #35A947;
+    }
+    .forget_btn{
+        padding:.38rem .75rem 0; 
+        @include fj();
+        a{
+             @include sc(.24rem,#333)
+        }
+        a.forget_code{
+            color:#E93636
+        }
+     
+    }
+     .icon_input{
+        margin-top: .5rem;
+    }

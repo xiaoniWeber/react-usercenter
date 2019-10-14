@@ -1,0 +1,115 @@
+@import './mixin';
+.register_wrapper{
+    background:$fc;
+    padding-bottom:.5rem
+ }
+ .banner{
+     display: block;
+     width: 100%;
+     overflow: hidden;
+     font-size: 0;
+     img{
+         width: 7.5rem;
+     }
+ }
+ .registeForm{
+     padding-top: 1rem;
+     background: $fc;
+ }
+ .id_info{
+    @include sc(.24rem,#666);
+     padding-left: .75rem; 
+     margin-bottom:.1rem;
+ }
+ .input_container{
+     @include sc(.3rem,#333);
+     width:6rem;
+     margin: 0 auto;
+     line-height: .5rem;
+     padding-bottom: .1rem;
+     // border-bottom: .025rem solid #ccc;
+     position:relative;
+     margin-bottom: .45rem;
+     @include fj();
+     &:after{
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         display: block;
+         width: 100%;
+         height: 1px;
+         background: rgba(0,0,0,.12);
+         content: " ";
+     }
+     &:before{
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         z-index: 1;
+         display: block;
+         width: 0;
+         height: 1px;
+         background: #333;
+         content: " ";
+         transition: width .3s ease-in-out;
+         // transform: translateX(-50%);
+     }
+     .left_area{
+        //  width: 80%;
+     }
+     input{
+         // margin-left: .6rem;
+         @include sc(.3rem,#333);
+          width: 100%;
+         text-align:left;
+     }
+     input.phone_prefix{
+        width: 10%;
+        margin-left: 0;
+     }
+     .icon_input{
+         img{
+             @include wh(.44rem,.44rem);
+             display: inline-block;
+             vertical-align: middle;
+         }
+     }
+     .get_identify{
+          background: transparent;
+         span{
+             @include sc(.24rem,#FF5722)
+         }
+         
+     }
+ }
+ .idCard_container{
+     .left_area{
+         width:100%;
+         margin :0 auto;
+     }
+ 
+ }
+  .input_container.input_focus:before{
+     width:100%
+ }
+ .input_container.input_error:before{
+     width:0%;
+     background: #E93636;
+ }
+ .sub_btn{
+     @include btn(6rem);
+     margin: .64rem auto 0;
+     background:#999;
+ }
+ .sub_btn.blue_btn{
+     background: #35A947;
+ }
+ .input_container .password_number{
+     width:90%;
+     input{
+         width:100%;
+     }
+ }
+ .icon_input{
+     margin-top: .5rem;
+ }

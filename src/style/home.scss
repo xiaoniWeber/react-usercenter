@@ -1,0 +1,6 @@
+@import './mixin';
+
+.login_btn {
+    @include sc(0.36rem, #222);
+    margin: 0 0.37rem 0 0.16rem;
+  }
